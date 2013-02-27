@@ -1,0 +1,28 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Patrick J. Donnelly"
+depends = {
+[[lua ~> 5.1]],
+}
+
+desc = "Lua support for ANSI C signals."
+version = "1.000"
+maintainer = "Peter Kapec"
+files = {
+Runtime = {
+[[lib/lua/signal.so]],
+}
+,
+Data = {
+[[share/lua-signal/readme.txt]],
+}
+,
+Test = {
+[[share/lua-signal/test/test.lua]],
+}
+,
+}
+
+url = "http://luaforge.net/projects/luasignal/"
+name = "lua-signal"
+license = "MIT"
