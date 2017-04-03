@@ -344,6 +344,12 @@ int luaopen_signal(lua_State *L)
   int i = 0;
 
   /* add the library */
+  // lua5.2
+//   lua_newtable(L);
+//   luaL_setfuncs(L, lsignal_lib, 0);
+//   lua_pushvalue(L, -1);
+//   lua_setglobal(L, "signal");
+  // lua5.1
   luaL_register(L, "signal", lsignal_lib);
 
   /* push lua_signals table into the registry */
